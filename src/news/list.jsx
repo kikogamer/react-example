@@ -1,8 +1,13 @@
 import React from 'react';
+import Item from './item'
 
-export default (props) => (
-  <div>
-    <h3>list</h3>
-    {props.children}
-  </div>
-)
+export default class List extends React.Component {
+  render() {
+    return (
+      <div>
+        <h3>list</h3>
+        {this.props.children}
+      </div>
+    )
+  }
+}
